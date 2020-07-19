@@ -1,0 +1,5 @@
+<resources>
+    <string name="feedback_title_internal_error">Titulo</string>
+    <string name="feedback_msg_internal_error">Message</string>
+    <string name="feedback_btn_label_internal_error">ok</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="pageMargin">20dp</dimen>
+    <dimen name="offset">30dp</dimen>
+    <dimen name="pageMarginAndOffset">50dp</dimen>
+    <dimen name="card_place_list_height">64dp</dimen>
+    <dimen name="card_transaction_list_height">74dp</dimen>
+
+    <dimen name="terms_header_textSize">18sp</dimen>
+    <dimen name="terms_header_paddingTop">17dp</dimen>
+    <dimen name="terms_fragment_webView_margin">10dp</dimen>
+    <dimen name="loading_dialog_height">16dp</dimen>
+
+    <!-- Template -->
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_normal">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_extra_large">48dp</dimen>
+    <dimen name="icon_size_ultra_large">64dp</dimen>
+
+    <dimen name="avatar_size_small">16dp</dimen>
+    <dimen name="avatar_size_normal">24dp</dimen>
+    <dimen name="avatar_size_large">32dp</dimen>
+    <dimen name="avatar_size_extra_large">48dp</dimen>
+    <dimen name="avatar_size_ultra_large">64dp</dimen>
+    <dimen name="avatar_size_mega_large">96dp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_extra_large">16dp</dimen>
+    <dimen name="margin_extra_extra_large">24dp</dimen>
+    <dimen name="margin_ultra_large">32dp</dimen>
+    <dimen name="margin_ultra_larger">48dp</dimen>
+    <dimen name="margin_ultra_ultra_large">64dp</dimen>
+
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_large">12dp</dimen>
+    <dimen name="padding_extra_large">16dp</dimen>
+    <dimen name="padding_extra_larger">24dp</dimen>
+    <dimen name="padding_ultra_large">32dp</dimen>
+    <dimen name="padding_ultra_ultra_large">32dp</dimen>
+
+    <dimen name="text_size_small">8sp</dimen>
+    <dimen name="text_size_medium">10sp</dimen>
+    <dimen name="text_size_regular">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_navigation_title">26sp</dimen>
+    <dimen name="text_size_ultra_large">36sp</dimen>
+
+    <!-- Feedback dialog/fragment  -->
+    <dimen name="feedback_image_width">300dp</dimen>
+    <dimen name="feedback_image_height">250dp</dimen>
+    <dimen name="feedback_image_margin_top">100dp</dimen>
+
+    <dimen name="default_btn_width">280dp</dimen>
+    <dimen name="default_btn_height">56dp</dimen>
+
+    <dimen name="mini_card_width">55dp</dimen>
+    <dimen name="mini_card_height">32dp</dimen>
+    <dimen name="mini_card_content_width">312dp</dimen>
+    <dimen name="mini_card_content_height">64dp</dimen>
+
+    <dimen name="places_toolbar_height">128dp</dimen>
+    <dimen name="navigation_bar_text_size">12sp</dimen>
+    <dimen name="item_advantages_height">106dp</dimen>
+    <dimen name="item_advantages_image_width">112dp</dimen>
+
+    <!-- cards_fragment -->
+    <dimen name="pager_cards_height">210dp</dimen>
+    <dimen name="refresh_image">50dp</dimen>
+    <dimen name="ads_container">50dp</dimen>
+    <dimen name="pager_communication_cards_height">280dp</dimen>
+
+    <!-- card_fragment -->
+    <dimen name="ribbon_image_width">64dp</dimen>
+    <dimen name="ribbon_image_height">48dp</dimen>
+    <dimen name="currency_real_value_txt">40sp</dimen>
+</resources>

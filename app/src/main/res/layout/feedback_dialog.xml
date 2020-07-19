@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.mvvm.mvvm.feedback.viewModel.FeedbackDialogViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/feedback_image_width"
+        android:layout_height="@dimen/feedback_image_height"
+        android:layout_marginTop="@dimen/feedback_image_margin_top"
+        android:src="@{viewModel.model.imageResource}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_ultra_large"
+            android:layout_marginTop="@dimen/margin_ultra_large"
+            android:layout_marginEnd="@dimen/margin_ultra_large"
+            android:gravity="center"
+            android:text="@{viewModel.model.title}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            tools:text="title" />
+
+    <TextView
+        android:id="@+id/msgTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/margin_extra_large"
+        android:gravity="center"
+        android:text="@{viewModel.model.message}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTxt"
+        tools:text="Message" />
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_large"
+        android:text="@{viewModel.model.labelBtn}"
+        android:onClick="@{() -> viewModel.mainAction()}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/msgTxt"
+        tools:text="ok"/>
+
+    <TextView
+        android:id="@+id/secondaryBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:layout_marginEnd="@dimen/margin_extra_large"
+        android:layout_marginBottom="@dimen/margin_ultra_ultra_large"
+        android:gravity="center"
+        android:onClick="@{() -> viewModel.secondaryAction()}"
+        android:text="@{viewModel.model.labelSecondaryBtn}"
+        android:visibility="@{viewModel.model.secondaryBtnVisibility()}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="ok" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
